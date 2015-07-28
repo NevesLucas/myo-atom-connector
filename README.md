@@ -4,8 +4,7 @@ This is Atom connector for the MYO.
 
 ## How to Install
 
-
-
+N/A
 
 ## Gesture Support
 
@@ -19,19 +18,19 @@ More gestures will be added soon.
 
 ### Double Tap
 
-?
+Unlock gestures
 
 ### Wave Left
 
-?
+Navigate to the previous pane
 
 ### Wave Right
 
-?
+Navigate to the next pane
 
 ### Spread Fingers
 
-Beautify the code of the current file
+Open the settings pane
 
 ### Make Fist
 
@@ -48,5 +47,5 @@ Please report any bugs or feature requests on the github issues page for this pr
 
 -   [Fork](https://help.github.com/articles/fork-a-repo) the [Myo-Atom-Connector on github](https://github.com/geekybeaver/myo-atom-connector)
 -   Commit and push until you are happy with your contribution
--   [Make a pull request](https://help.github.com/articles/using-pull-requestsatom
+-   [Make a pull request](https://help.github.com/articles/using-pull-requests)
 -   Thanks!

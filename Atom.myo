@@ -4,16 +4,16 @@ scriptTitle = 'Atom Connector'
 
 -- Effects
 
-function forward()
-    myo.keyboard("j", "press")
+function nextPanee()
+    myo.keyboard("pagedown", "press", "control")
 end
 
-function backward()
-    myo.keyboard("k", "press")
+function previousPane()
+    myo.keyboard("pageup", "press", "control")
 end
 
-function openedit()
-    myo.keyboard("e", "press")
+function openSettings()
+    myo.keyboard("comma", "press", "control")
 end
 
 function saveCurrentFile()
@@ -43,9 +43,9 @@ function onPoseEdge(pose, edge)
 
             -- Deal with direction and arm
             if pose == "waveIn" then
-                backward()
+                previousPane()
             else
-                forward()
+                nextPane()
             end
 
             -- Extend unlock and notify user
@@ -57,7 +57,7 @@ function onPoseEdge(pose, edge)
     -- Dealing with fingersSpread
     if pose == "fingersSpread" then
         if edge == "on" then
-            openedit()
+            openSettings()
 
             -- Extend unlock and notify user
             myo.unlock("timed")
